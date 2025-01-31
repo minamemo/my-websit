@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع السوق</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007bff, #6610f2);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffeb3b;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            background-color: #6610f2;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .lang-switch button {
+            background: none;
+            color: #333;
+            border: 1px solid #333;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .lang-switch button:hover {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بك في موقع السوق</h1>
+        <p>للتواصل معنا، اختر البلد الذي ترغب في معرفة المزيد عن منتجاتها:</p>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+        <a href="contact.html">اتصل بنا</a>
+    </nav>
+    <div class="container">
+        <div class="lang-switch">
+            <button onclick="window.location.href='index.html'">عربي</button>
+            
+        </div>
+
+        <section>
+            <h2>اختار البلد:</h2>
+            <p>الرجاء اختيار الدولة لتصفح المنتجات والعروض الخاصة بك:</p>
+            <ul>
+                <li><a href="emirates.html" class="btn">الإمارات</a></li>
+                <li><a href="saudi.html" class="btn">السعودية</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 موقع السوق. <br>
+        <a href="privacy.html">سياسة الخصوصية</a> | <a href="contact.html">اتصل بنا</a>
+    </footer>
+</body>
+</html>

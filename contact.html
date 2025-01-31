@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امرحبًا بك في موقع السوق</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(90deg, #007bff, #6610f2);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffeb3b;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بك في موقع السوق</h1>
+        <p><i class="fas fa-envelope"></i> للتواصل عبر البريد: 
+            <a href="mailto:minaata19989@gmail.com">minaata19989@gmail.com</a>
+        </p>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+        <a href="contact.html">اتصل بنا</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>اتصل بنا</h2>
+            <p>يرجى ملء النموذج أدناه للتواصل معنا:</p>
+            <form class="contact-form" action="https://formspree.io/f/xkgongba" method="POST">
+                <label for="name">اسمك الكامل:</label>
+                <input name="name" id="name" type="text" placeholder="اكتب اسمك الكامل" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input name="email" id="email" type="email" placeholder="اكتب بريدك الإلكتروني" required>
+
+                <label for="phone">رقم الهاتف:</label>
+                <input name="phone" id="phone" type="tel" placeholder="اكتب رقم هاتفك" required>
+
+                <label for="is_adult">هل أنت بالغ؟</label>
+                <select name="is_adult" id="is_adult" required>
+                    <option value="">اختر...</option>
+                    <option value="yes">نعم</option>
+                    <option value="no">لا</option>
+                </select>
+
+                <label for="birth_date">تاريخ الميلاد:</label>
+                <input name="birth_date" id="birth_date" type="date" required>
+
+                <label for="languages">اللغات:</label>
+                <select name="languages" id="languages" required>
+                    <option value="">اختر لغتك...</option>
+                    <option value="Arabic">العربية</option>
+                    <option value="English">الإنجليزية</option>
+                    <option value="French">الفرنسية</option>
+                    <option value="Spanish">الإسبانية</option>
+                    <option value="German">الألمانية</option>
+                    <option value="Chinese">الصينية</option>
+                    <option value="Japanese">اليابانية</option>
+                    <option value="Russian">الروسية</option>
+                    <option value="Italian">الإيطالية</option>
+                    <option value="Portuguese">البرتغالية</option>
+                    <option value="Dutch">الهولندية</option>
+                    <option value="Korean">الكورية</option>
+                    <option value="Hindi">الهندية</option>
+                    <option value="Bengali">البنغالية</option>
+                    <option value="Turkish">التركية</option>
+                    <option value="Swedish">السويدية</option>
+                    <option value="Polish">البولندية</option>
+                    <option value="Danish">الدنماركية</option>
+                    <option value="Finnish">الفنلندية</option>
+                    <option value="Greek">اليونانية</option>
+                    <option value="Czech">التشيكية</option>
+                    <option value="Norwegian">النرويجية</option>
+                    <option value="Hungarian">المجرية</option>
+                    <option value="Thai">التايلاندية</option>
+                </select>
+
+                <label for="message">رسالتك:</label>
+                <textarea name="message" id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 موقع السوق.
+    </footer>
+</body>
+</html>
